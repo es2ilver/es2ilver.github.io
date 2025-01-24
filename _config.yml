@@ -215,6 +215,11 @@ exclude:
   - purgecss.js
   - rollup.config.js
   - "package*.json"
+  
+  - node_modules
+  - Gemfile
+  - Gemfile.lock
+
 
 jekyll-archives:
   enabled: [categories, tags]
