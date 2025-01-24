@@ -1,9 +1,5 @@
 # The Site Configuration
 
-
-img_path: "/assets/img/"
-
-
 # Import the theme
 theme: jekyll-theme-chirpy
 
@@ -228,3 +224,7 @@ jekyll-archives:
   permalinks:
     tag: /tags/:name/
     category: /categories/:name/
+
+
+future: true
+publish: true
