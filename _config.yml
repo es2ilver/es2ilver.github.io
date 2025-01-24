@@ -1,5 +1,9 @@
 # The Site Configuration
 
+
+img_path: "/assets/img/"
+
+
 # Import the theme
 theme: jekyll-theme-chirpy
 
