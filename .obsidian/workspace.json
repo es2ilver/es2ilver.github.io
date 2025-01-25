@@ -1,0 +1,169 @@
+{
+  "main": {
+    "id": "0645eb42eed0cc8f",
+    "type": "split",
+    "children": [
+      {
+        "id": "647b009189cf9d12",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "96cccbb11c7f341a",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "새 탭"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "e1bcb1a6f7b8ce63",
+    "type": "split",
+    "children": [
+      {
+        "id": "b7b55a627ef1b5e9",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "619bc3a107f13014",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-folder-closed",
+              "title": "파일 탐색기"
+            }
+          },
+          {
+            "id": "0cd258869f077255",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "검색"
+            }
+          },
+          {
+            "id": "17e774ebbe8b4df6",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "63b2a9acfe48ca55",
+    "type": "split",
+    "children": [
+      {
+        "id": "86ab4fd37db23702",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e36cd0eaee7246b7",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "백링크"
+            }
+          },
+          {
+            "id": "44a754b23e687e30",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "나가는 링크"
+            }
+          },
+          {
+            "id": "02b844307142e762",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "2f70f71c91c3bfd7",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {},
+              "icon": "lucide-list",
+              "title": "개요"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:퀵 스위처 열기": false,
+      "graph:그래프 뷰 열기": false,
+      "canvas:새 캔버스 만들기": false,
+      "daily-notes:오늘의 데일리 노트 열기": false,
+      "templates:템플릿 삽입": false,
+      "command-palette:명령어 팔레트 열기": false
+    }
+  },
+  "active": "96cccbb11c7f341a",
+  "lastOpenFiles": [
+    "_site/categories/diffusion-models/index.html",
+    "_site/categories/diffusion-models",
+    "_site/tags/dipir/index.html",
+    "_site/tags/dipir",
+    "_site/posts/DiPIR/index.html",
+    "_site/posts/DiPIR",
+    "_posts/2025-01-10-DiPIR.md",
+    "_posts/2025-01-10-DiPIR",
+    "_posts/2024-12-30"
+  ]
+}
