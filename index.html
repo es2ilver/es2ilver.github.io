@@ -67,12 +67,16 @@
       order: 2;
       display: flex;
       justify-content: center;
-      /* Center-aligns image horizontally */
+      align-items: center;      /* 세로 방향도 중앙 정렬 */
+      background-color: white;  /* 투명 PNG 뒤에 흰색 배경 깔기 */
+      border-radius: 8px;       /* 모서리를 살짝 둥글게 (선택) */
     }
 
     .image-content img {
       width: 100%;
       max-width: 100%;
+      height: auto;             /* 비율 유지 */
+      display: block;           /* 하단 여백 제거 */
     }
 
     @media screen and (max-width: 768px) {
@@ -145,12 +149,12 @@
                     </div>
                   </td>
                   <td style="padding:10px;width:75%;vertical-align:top">
-                    <papertitle style="color:rgb(48, 48, 48);"><big>B.S. in Data Sciecne </big> </papertitle>
+                    <papertitle style="color:rgb(48, 48, 48);"><big>B.S. in Data Science </big> </papertitle>
                     <papertitle><big> | Korea University </big></papertitle>
                     <br>
                     Mar. 2021 – Feb. 2026
                     <br><br>
-                    <papertitle style="color:rgb(48, 48, 48);"><big>M.S. in Artificial Intelligence (Expected)</big></papertitle>
+                    <papertitle style="color:rgb(48, 48, 48);"><big>M.S. in Artificial Intelligence</big></papertitle>
                     <papertitle><big> | Korea University</big></papertitle>
                     <br>
                     Mar. 2026 – Aug. 2027 (expected)
