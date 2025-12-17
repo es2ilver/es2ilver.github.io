@@ -37,6 +37,18 @@
     }
 
     /* ===== Header ===== */
+    .header {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 24px;
+      margin-bottom: 40px;
+    }
+
+    .header-text {
+      flex: 1;
+    }
+
     .name {
       font-size: 36px;
       font-weight: 700;
@@ -46,7 +58,7 @@
     .contact {
       font-size: 14px;
       color: #555;
-      margin-bottom: 40px;
+      line-height: 1.8;
     }
 
     .contact a {
@@ -56,6 +68,15 @@
 
     .contact a:hover {
       text-decoration: underline;
+    }
+
+    /* Profile photo dummy */
+    .profile-photo {
+      width: 120px;
+      height: 120px;
+      background-color: #e5e5e5;
+      border-radius: 8px;
+      flex-shrink: 0;
     }
 
     /* ===== Sections ===== */
@@ -118,16 +139,22 @@
 
     /* ===== Responsive ===== */
     @media (max-width: 600px) {
+      .header {
+        flex-direction: column-reverse;
+        align-items: flex-start;
+      }
+
+      .profile-photo {
+        width: 100px;
+        height: 100px;
+      }
+
       .name {
         font-size: 30px;
       }
 
       .section-title {
         font-size: 22px;
-      }
-
-      .item {
-        gap: 12px;
       }
 
       .item-icon {
@@ -142,11 +169,18 @@
   <div class="wrapper">
 
     <!-- Header -->
-    <div class="name">Jeong-Eun Lee</div>
-    <div class="contact">
-      Email: <a href="mailto:esilver@korea.ac.kr">esilver@korea.ac.kr</a> ·
-      GitHub: <a href="https://github.com/es2ilver" target="_blank">es2ilver</a> ·
-      Google Scholar: <a href="#" target="_blank">Profile</a>
+    <div class="header">
+      <!-- Profile photo dummy -->
+      <div class="profile-photo"></div>
+
+      <div class="header-text">
+        <div class="name">Jeong-Eun Lee</div>
+        <div class="contact">
+          Email: <a href="mailto:esilver@korea.ac.kr">esilver@korea.ac.kr</a><br>
+          GitHub: <a href="https://github.com/es2ilver" target="_blank">es2ilver</a><br>
+          Google Scholar: <a href="#" target="_blank">Profile</a>
+        </div>
+      </div>
     </div>
 
     <!-- Education -->
@@ -179,7 +213,7 @@
       <div class="item">
         <div class="item-icon"></div>
         <div class="item-content">
-          <div class="item-title">Undergraduate Researcher</div>
+          <div class="item-title">2nd Member</div>
           <div class="item-subtitle">AIKU @ Korea University</div>
           <div class="item-date">Jul. 2023 – Dec. 2024</div>
         </div>
@@ -197,30 +231,34 @@
       <div class="item">
         <div class="item-icon"></div>
         <div class="item-content">
-          <div class="item-title">Participant</div>
-          <div class="item-subtitle">SKT AI Fellowship (6th)</div>
+          <div class="item-title">SKT AI Fellowship (6th)</div>
+          <div class="item-subtitle">SK Telecom</div>
           <div class="item-date">Jun. 2024 – Oct. 2024</div>
+          <ul>
+            <li>Research on Object Insertion Techniques for Virtual Product Placement (VPP).</li>
+          </ul>
         </div>
       </div>
     </div>
 
-    <!-- Research Interests -->
+    <!-- Honors & Awards -->
     <div class="section">
-      <div class="section-title">Research Interests</div>
-      <ul>
-        <li>Vision-Language Models (VLMs)</li>
-        <li>Multimodal Reasoning and Hallucination</li>
-        <li>Domain Generalization & Few-Shot Learning</li>
-      </ul>
-    </div>
-
-    <!-- Publications -->
-    <div class="section">
-      <div class="section-title">Publications & Preprints</div>
+      <div class="section-title">Honors & Awards</div>
       <ul>
         <li>
-          <strong>[Author]</strong>, et al. <em>Paper Title</em>.
-          Conference / Journal, Year.
+          <strong>Encouragement Award</strong>, Data Youth Campus Outstanding Project Award
+          <span class="item-date">(Aug. 2023)</span><br>
+          Korea University Intelligent Information SW Academy
+        </li>
+        <li>
+          <strong>Best Paper Award</strong>, 4th Korean Conference on Artificial Intelligence
+          <span class="item-date">(Oct. 2023)</span><br>
+          The Korean Institute of Communications and Information Sciences (KICS)
+        </li>
+        <li>
+          <strong>Bronze Prize</strong>, KU iNTHON Datathon
+          <span class="item-date">(Nov. 2023)</span><br>
+          Korea University SW-Centered University Project Group
         </li>
       </ul>
     </div>
