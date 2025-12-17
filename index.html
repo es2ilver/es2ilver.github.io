@@ -1,312 +1,178 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-FQNMP9HZQG"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-
-    gtag('config', 'G-FQNMP9HZQG');
-  </script>
-
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
-  <title>Jeongeun Lee</title>
-
-  <link rel="stylesheet" type="text/css" href="stylesheet.css">
-  <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-
-  <meta name="author" content="Jeongeun Lee">
+  <meta charset="UTF-8">
+  <title>Jeong-Eun Lee</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  <!-- Favicon -->
   <link rel="icon"
     href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎓</text></svg>">
+
   <style>
-    /* 이름 크기 키우기 */
-    name {
-      font-size: 36px; /* 원하는 크기로 조정 가능 */
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #ffffff;
+      color: #222;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+    }
+
+    .wrapper {
+      max-width: 800px;
+      margin: 60px auto;
+      padding: 0 20px;
+    }
+
+    /* Header */
+    .name {
+      font-size: 36px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .contact {
+      font-size: 14px;
+      color: #555;
+      margin-bottom: 40px;
+    }
+
+    .contact a {
+      color: #555;
+      text-decoration: none;
+    }
+
+    .contact a:hover {
+      text-decoration: underline;
+    }
+
+    /* Sections */
+    .section {
+      margin-top: 40px;
+    }
+
+    .section-title {
+      font-size: 26px;
+      font-weight: bold;
+      margin-bottom: 15px;
+      padding-bottom: 5px;
+      border-bottom: 1px solid #ddd;
+    }
+
+    /* Items */
+    .item {
+      margin-bottom: 22px;
+    }
+
+    .item-title {
+      font-size: 18px;
       font-weight: bold;
     }
 
-    /* 섹션 헤더(Education, Experience 등) 크기 키우기 */
-    heading {
-      font-size: 28px; /* 원하는 크기로 조정 가능 */
-      font-weight: bold;
+    .item-subtitle {
+      font-size: 16px;
+      color: #444;
     }
 
-    .container {
-      display: flex;
-      flex-wrap: wrap;
-      width: 100%;
-      border: 0px;
-      border-spacing: 0px;
-      border-collapse: separate;
-      margin-right: auto;
-      margin-left: auto;
-      align-items: center;
-      /* Center-aligns items vertically in desktop mode */
+    .item-date {
+      font-size: 14px;
+      color: #777;
     }
 
-    .text-content {
-      padding: 2.5%;
-      width: 63%;
-      vertical-align: middle;
-      order: 1;
+    /* Lists */
+    ul {
+      margin-top: 8px;
+      padding-left: 20px;
     }
 
-    .image-content {
-      padding: 2.5%;
-      width: 25%;
-      max-width: 25%;
-      order: 2;
-      display: flex;
-      justify-content: center;
-      align-items: center;      /* 세로 방향도 중앙 정렬 */
-      background-color: white;  /* 투명 PNG 뒤에 흰색 배경 깔기 */
-      border-radius: 8px;       /* 모서리를 살짝 둥글게 (선택) */
+    li {
+      margin-bottom: 6px;
     }
 
-    .image-content img {
-      width: 100%;
-      max-width: 100%;
-      height: auto;             /* 비율 유지 */
-      display: block;           /* 하단 여백 제거 */
-    }
-
-    @media screen and (max-width: 768px) {
-
-      .text-content,
-      .image-content {
-        width: 100%;
-        max-width: 100%;
-        order: 1;
+    /* Responsive */
+    @media (max-width: 600px) {
+      .name {
+        font-size: 30px;
       }
 
-      .image-content {
-        order: 2;
-        display: flex;
-        justify-content: center;
-        /* Center-aligns image horizontally in mobile mode */
-      }
-
-      .image-content img {
-        width: auto;
-        max-width: 100%;
-        height: auto;
-        max-height: 300px;
-        /* Adjust this value as needed */
+      .section-title {
+        font-size: 22px;
       }
     }
   </style>
 </head>
 
-<body class="bg_colour">
-  <table <table border=0 class="bg_colour"
-    style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-    <tbody>
-      <tr style="padding:0px">
-        <td style="padding:0px">
-          <div class="container">
-            <div class="text-content">
-              <p style="text-align:left">
-                <name>Your Name</name>
-              </p>
-              <p>Hi! Welcome to my personal page. I am a [Your Profession/Role], passionate about [Your Main Interest/Field].</p>
+<body>
+  <div class="wrapper">
 
-              <p>
-                My work focuses on [Describe your main research/work areas, e.g., developing innovative solutions for X, exploring Y concepts, etc.].
-              </p>
+    <!-- Header -->
+    <div class="name">Jeong-Eun Lee</div>
+    <div class="contact">
+      Email: <a href="mailto:esilvdr@korea.ac.kr">esilver@korea.ac.kr</a> ·
+      GitHub: <a href="https://github.com/es2ilver" target="_blank">es2ilver</a> ·
+      Google Scholar: <a href="#" target="_blank">Profile</a>
+    </div>
 
-              <p style="text-align:center">
-                <a href="#">Github</a>&nbsp/&nbsp
-                <a href="#">CV</a>
-              </p>
-            </div>
-            <div class="image-content">
-              <a href="images/profile.png"><img alt="profile photo" src="images/profile.png" class="hoverZoomLink"></a>
-            </div>
-          </div>
-          <hr class="soft">
+    <!-- Education -->
+    <div class="section">
+      <div class="section-title">Education</div>
 
-          <button style="border:0px transparent; background-color: transparent;outline:none;" type="button"
-            class="collapsible" data-toggle="collapse" data-target="#content-education" id="education">
-            <heading>Education</heading>
-          </button>
-          <div id="content-education" class="collapse in">
-            <table border=0 class="bg_colour"
-              style="padding:20px;width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-              <tbody>
-                <tr>
-                  <td style="padding:10px;width:25%;vertical-align:middle">
-                    <div class="one">
-                      <img src='images/korea_univ_logo.png' width="120">
-                    </div>
-                  </td>
-                  <td style="padding:10px;width:75%;vertical-align:top">
-                    <papertitle style="color:rgb(48, 48, 48);"><big>B.S. in Data Science </big> </papertitle>
-                    <papertitle><big> | Korea University </big></papertitle>
-                    <br>
-                    Mar. 2021 – Feb. 2026
-                    <br><br>
-                    <papertitle style="color:rgb(48, 48, 48);"><big>M.S. in Artificial Intelligence</big></papertitle>
-                    <papertitle><big> | Korea University</big></papertitle>
-                    <br>
-                    Mar. 2026 – Aug. 2027 (expected)
-                    <br><br>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-          <hr class="soft">
+      <div class="item">
+        <div class="item-title">B.S. in Data Science</div>
+        <div class="item-subtitle">Korea University</div>
+        <div class="item-date">Mar. 2021 – Feb. 2026</div>
+      </div>
 
-          <button style="border:0px transparent; background-color: transparent;outline:none;" type="button"
-            class="collapsible" data-toggle="collapse" data-target="#content-honorsawards" id="honorsawards">
-            <heading>Honors & Awards</heading>
-          </button>
-          <div id="content-honorsawards" class="collapse in">
-            <table border=0 class="bg_colour"
-              style="padding:20px;width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-              <tbody>
-                <tr>
-                  <td>
-                    <ul>
-                      <li>[Your Award/Honor Name], [Year]</li>
-                      <li>[Your Award/Honor Name], [Year]</li>
-                    </ul>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-          <hr class="soft">
+      <div class="item">
+        <div class="item-title">M.S. in Artificial Intelligence</div>
+        <div class="item-subtitle">Korea University</div>
+        <div class="item-date">Mar. 2026 – Aug. 2027 (expected)</div>
+      </div>
+    </div>
 
-          <button style="border:0px transparent; background-color: transparent;outline:none;" type="button"
-            class="collapsible" data-toggle="collapse" data-target="#content-experience" id="experience">
-            <heading>Experience</heading>
-          </button>
-          <div id="content-experience" class="collapse in">
+    <!-- Experience -->
+    <div class="section">
+      <div class="section-title">Experience</div>
 
-            <table border=0 class="bg_colour"
-              style="padding:20px;width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-              <tbody>
+      <div class="item">
+        <div class="item-title">Undergraduate Researcher</div>
+        <div class="item-subtitle">AIKU @ Korea University</div>
+        <div class="item-date">Jul. 2023 – Dec. 2024</div>
+      </div>
 
-                <tr>
-                  <td style="padding:10px;width:25%;vertical-align:middle">
-                    <div class="one">
-                      <img src='images/generic_logo_1.png' width="120">
-                    </div>
-                  </td>
-                  <td style="padding:10px;width:75%;vertical-align:top">
-                    <papertitle style="color:gray"><big>Your Position 1 Title</big> </papertitle>
-                    <papertitle><big> | AIKU @ Korea University </big></papertitle>
-                    <br>
-                    2023. 07. - 2024.12.
-                    <br>
-                    <br>
-                    <p>2nd Member</p>
+      <div class="item">
+        <div class="item-title">Research Intern</div>
+        <div class="item-subtitle">Korea Institute of Science and Technology (KIST)</div>
+        <div class="item-date">Jan. – Feb. 2024, Jul. – Aug. 2024</div>
+      </div>
 
-                  </td>
-                </tr>
+      <div class="item">
+        <div class="item-title">Participant</div>
+        <div class="item-subtitle">SKT AI Fellowship (6th)</div>
+        <div class="item-date">Jun. 2024 – Oct. 2024</div>
+      </div>
+    </div>
 
-                <tr>
-                  <td style="padding:10px;width:25%;vertical-align:middle">
-                    <div class="one">
-                      <img src='images/generic_logo_2.png' width="120">
-                    </div>
-                  </td>
-                  <td style="padding:10px;width:75%;vertical-align:top">
-                    <papertitle style="color:gray"><big>Your Position 2 Title</big> </papertitle>
-                    <papertitle><big> | Korea Institute of Science and Technology (KIST) </big></papertitle>
-                    <br>
-                    2024.01. - 2024.02., 2024.07. - 2024.08. (Location)
-                    <br>
-                    <br>
-                    <p>Undergraduate research intern in center for Artificial Intelligence</p>
-                  </td>
-                </tr>
+    <!-- Research Interests -->
+    <div class="section">
+      <div class="section-title">Research Interests</div>
+      <ul>
+        <li>...</li>
+      </ul>
+    </div>
 
+    <!-- Publications (placeholder) -->
+    <div class="section">
+      <div class="section-title">Publications & Preprints</div>
+      <ul>
+        <li>
+          <strong>[Author]</strong>, et al. <em>Paper Title</em>.
+          Conference / Journal, Year.
+        </li>
+      </ul>
+    </div>
 
-                <tr>
-                  <td style="padding:10px;width:25%;vertical-align:middle">
-                    <div class="one">
-                      <img src='images/generic_logo_2.png' width="120">
-                    </div>
-                  </td>
-                  <td style="padding:10px;width:75%;vertical-align:top">
-                    <papertitle style="color:gray"><big>Your Position 2 Title</big> </papertitle>
-                    <papertitle><big> | SKT AI Fellowship 6th </big></papertitle>
-                    <br>
-                    2024.06. - 2024.10.
-                    <br>
-                    <br>
-                    <p>-</p>
-                  </td>
-                </tr>
-
-
-                </tbody>
-            </table>
-          </div>
-          <hr class="soft">
-
-          <button style="border:0px transparent; background-color: transparent;outline:none;" type="button"
-            class="collapsible" data-toggle="collapse" data-target="#content-academic" id="academic">
-            <heading>Academic Activities</heading>
-          </button>
-          <div id="content-academic" class="collapse in">
-            <table border=0 class="bg_colour"
-              style="padding:20px;width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-              <tbody>
-
-                <tr>
-                  <td>
-                    <ul>
-                      <li>Area Chair & Reviewer
-                        <ul>
-                          <li>Area Chair: [e.g., NeurIPS, ICML, etc.]</li>
-                          <li>Conference Reviewer: [e.g., ICLR, CoRL, CVPR, AAAI, IROS, RSS, etc.]</li>
-                          <li>Journal Reviewer: [e.g., TMLR, IEEE RA-L, etc.]</li>
-                        </ul>
-                      </li>
-                      <li>Workshop Organizer
-                        <ul>
-                          <li><a href="#">[Your Workshop Title]</a> @ [Conference/Year]</li>
-                          </ul>
-                      </li>
-                    </ul>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-          <hr class="soft">
-
-          <table
-            style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-            <tbody>
-              <tr>
-                <td style="padding:0px">
-                  <br>
-                  <p style="text-align:right;font-size:small;">
-                    Website templates from <a href="https://jonbarron.info/" target="_blank">here</a> and <a
-                      href="https://rishabkhincha.github.io/" target="_blank">here</a>.</p>
-                </td>
-                </p>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-      </td>
-      </tr>
-    </tbody>
-  </table>
+  </div>
 </body>
-
 </html>
