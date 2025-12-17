@@ -10,13 +10,24 @@
     href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎓</text></svg>">
 
   <style>
+    /* ===== Global ===== */
     body {
-      font-family: Arial, Helvetica, sans-serif;
+      font-family:
+        -apple-system,
+        BlinkMacSystemFont,
+        "Apple SD Gothic Neo",
+        "Malgun Gothic",
+        "Segoe UI",
+        Roboto,
+        Helvetica,
+        Arial,
+        sans-serif;
       background-color: #ffffff;
       color: #222;
       margin: 0;
       padding: 0;
       line-height: 1.6;
+      font-size: 16px;
     }
 
     .wrapper {
@@ -25,10 +36,10 @@
       padding: 0 20px;
     }
 
-    /* Header */
+    /* ===== Header ===== */
     .name {
       font-size: 36px;
-      font-weight: bold;
+      font-weight: 700;
       margin-bottom: 10px;
     }
 
@@ -47,27 +58,42 @@
       text-decoration: underline;
     }
 
-    /* Sections */
+    /* ===== Sections ===== */
     .section {
       margin-top: 40px;
     }
 
     .section-title {
       font-size: 26px;
-      font-weight: bold;
-      margin-bottom: 15px;
-      padding-bottom: 5px;
+      font-weight: 700;
+      margin-bottom: 18px;
+      padding-bottom: 6px;
       border-bottom: 1px solid #ddd;
     }
 
-    /* Items */
+    /* ===== Items with Icons ===== */
     .item {
+      display: flex;
+      align-items: flex-start;
+      gap: 16px;
       margin-bottom: 22px;
+    }
+
+    .item-icon {
+      width: 48px;
+      height: 48px;
+      background-color: #e5e5e5;
+      border-radius: 6px;
+      flex-shrink: 0;
+    }
+
+    .item-content {
+      flex: 1;
     }
 
     .item-title {
       font-size: 18px;
-      font-weight: bold;
+      font-weight: 600;
     }
 
     .item-subtitle {
@@ -80,7 +106,7 @@
       color: #777;
     }
 
-    /* Lists */
+    /* ===== Lists ===== */
     ul {
       margin-top: 8px;
       padding-left: 20px;
@@ -90,7 +116,7 @@
       margin-bottom: 6px;
     }
 
-    /* Responsive */
+    /* ===== Responsive ===== */
     @media (max-width: 600px) {
       .name {
         font-size: 30px;
@@ -98,6 +124,15 @@
 
       .section-title {
         font-size: 22px;
+      }
+
+      .item {
+        gap: 12px;
+      }
+
+      .item-icon {
+        width: 40px;
+        height: 40px;
       }
     }
   </style>
@@ -109,7 +144,7 @@
     <!-- Header -->
     <div class="name">Jeong-Eun Lee</div>
     <div class="contact">
-      Email: <a href="mailto:esilvdr@korea.ac.kr">esilver@korea.ac.kr</a> ·
+      Email: <a href="mailto:esilver@korea.ac.kr">esilver@korea.ac.kr</a> ·
       GitHub: <a href="https://github.com/es2ilver" target="_blank">es2ilver</a> ·
       Google Scholar: <a href="#" target="_blank">Profile</a>
     </div>
@@ -119,15 +154,21 @@
       <div class="section-title">Education</div>
 
       <div class="item">
-        <div class="item-title">B.S. in Data Science</div>
-        <div class="item-subtitle">Korea University</div>
-        <div class="item-date">Mar. 2021 – Feb. 2026</div>
+        <div class="item-icon"></div>
+        <div class="item-content">
+          <div class="item-title">B.S. in Data Science</div>
+          <div class="item-subtitle">Korea University</div>
+          <div class="item-date">Mar. 2021 – Feb. 2026</div>
+        </div>
       </div>
 
       <div class="item">
-        <div class="item-title">M.S. in Artificial Intelligence</div>
-        <div class="item-subtitle">Korea University</div>
-        <div class="item-date">Mar. 2026 – Aug. 2027 (expected)</div>
+        <div class="item-icon"></div>
+        <div class="item-content">
+          <div class="item-title">M.S. in Artificial Intelligence</div>
+          <div class="item-subtitle">Korea University</div>
+          <div class="item-date">Mar. 2026 – Aug. 2027 (expected)</div>
+        </div>
       </div>
     </div>
 
@@ -136,21 +177,30 @@
       <div class="section-title">Experience</div>
 
       <div class="item">
-        <div class="item-title">Undergraduate Researcher</div>
-        <div class="item-subtitle">AIKU @ Korea University</div>
-        <div class="item-date">Jul. 2023 – Dec. 2024</div>
+        <div class="item-icon"></div>
+        <div class="item-content">
+          <div class="item-title">Undergraduate Researcher</div>
+          <div class="item-subtitle">AIKU @ Korea University</div>
+          <div class="item-date">Jul. 2023 – Dec. 2024</div>
+        </div>
       </div>
 
       <div class="item">
-        <div class="item-title">Research Intern</div>
-        <div class="item-subtitle">Korea Institute of Science and Technology (KIST)</div>
-        <div class="item-date">Jan. – Feb. 2024, Jul. – Aug. 2024</div>
+        <div class="item-icon"></div>
+        <div class="item-content">
+          <div class="item-title">Research Intern</div>
+          <div class="item-subtitle">Korea Institute of Science and Technology (KIST)</div>
+          <div class="item-date">Jan. – Feb. 2024, Jul. – Aug. 2024</div>
+        </div>
       </div>
 
       <div class="item">
-        <div class="item-title">Participant</div>
-        <div class="item-subtitle">SKT AI Fellowship (6th)</div>
-        <div class="item-date">Jun. 2024 – Oct. 2024</div>
+        <div class="item-icon"></div>
+        <div class="item-content">
+          <div class="item-title">Participant</div>
+          <div class="item-subtitle">SKT AI Fellowship (6th)</div>
+          <div class="item-date">Jun. 2024 – Oct. 2024</div>
+        </div>
       </div>
     </div>
 
@@ -158,11 +208,13 @@
     <div class="section">
       <div class="section-title">Research Interests</div>
       <ul>
-        <li>...</li>
+        <li>Vision-Language Models (VLMs)</li>
+        <li>Multimodal Reasoning and Hallucination</li>
+        <li>Domain Generalization & Few-Shot Learning</li>
       </ul>
     </div>
 
-    <!-- Publications (placeholder) -->
+    <!-- Publications -->
     <div class="section">
       <div class="section-title">Publications & Preprints</div>
       <ul>
